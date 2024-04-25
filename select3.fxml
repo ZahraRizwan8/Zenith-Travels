@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.select3controller">   <children>
+      <AnchorPane prefHeight="66.0" prefWidth="600.0" style="-fx-background-color: #35abcc;">
+         <children>
+            <Label layoutX="261.0" layoutY="19.0" prefHeight="27.0" prefWidth="120.0" text="Zenith Resorts">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="32.0" layoutY="113.0" prefHeight="310.0" prefWidth="292.0" style="-fx-background-color: #d4c9c9;">
+         <children>
+            <ImageView fitHeight="111.0" fitWidth="127.0" layoutX="23.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/application/WhatsApp%20Image%202023-12-03%20at%2002.10.46%20(5).jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="105.0" fitWidth="144.0" layoutX="23.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/application/WhatsApp%20Image%202023-12-03%20at%2002.10.45%20(1).jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="85.0" fitWidth="120.0" layoutX="23.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../bin/application/WhatsApp%20Image%202023-12-03%20at%2002.10.46%20(1).jpeg" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="374.0" layoutY="113.0" prefHeight="174.0" prefWidth="171.0" style="-fx-background-color: #d4c9c9;">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <children>
+            <Label layoutX="18.0" layoutY="27.0" prefHeight="27.0" prefWidth="111.0" text="presidential Suites" />
+            <Label layoutX="18.0" layoutY="67.0" prefHeight="26.0" prefWidth="91.0" text="Swimming pool" />
+            <Label layoutX="18.0" layoutY="109.0" prefHeight="27.0" prefWidth="91.0" text="Hi-Tea at Cafe1" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btn_Confirm" layoutX="391.0" layoutY="333.0" mnemonicParsing="false" style="-fx-background-color: #349e44;" text="CONFIRM BOOKING" textFill="#0f1e11" />
+      <Button fx:id="btn_cancel" layoutX="390.0" layoutY="369.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="125.0" style="-fx-background-color: #d91a1a;" text="CANCEL BOOKING" textFill="#151414" />
+      <Button fx:id="btn_back" layoutX="516.0" layoutY="410.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Back" textFill="#112bec" underline="true" />
+   </children>
+</AnchorPane>

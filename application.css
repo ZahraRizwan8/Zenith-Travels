@@ -1,0 +1,6 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.hover-button:hover {
+    -fx-background-color: #35ABCC80; /* Change the background color on hover */
+    -fx-text-fill: white;         /* Change the text color on hover */
+}

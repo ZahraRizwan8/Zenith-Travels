@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="887.0" prefWidth="1308.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.cancelbookingcontroller">
+   <children>
+      <Label layoutX="520.0" layoutY="60.0" text="Cancel Booking" underline="true">
+         <font>
+            <Font name="Elephant" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="427.0" layoutY="170.0" text="Enter the details you entered before which are saved in travel history" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#35abcc" height="415.0" layoutX="293.0" layoutY="288.0" stroke="TRANSPARENT" strokeType="INSIDE" width="723.0" />
+      <Label layoutX="412.0" layoutY="349.0" text="Date">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="411.0" layoutY="477.0" text="Type">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="411.0" layoutY="618.0" text="Location">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datefield" layoutX="574.0" layoutY="343.0" promptText="Date" />
+      <TextField fx:id="typefield" layoutX="574.0" layoutY="471.0" prefHeight="31.0" prefWidth="218.0" promptText="Type" />
+      <TextField fx:id="locationfield" layoutX="574.0" layoutY="612.0" prefHeight="31.0" prefWidth="218.0" promptText="Location" />
+      <Button fx:id="buttonfield" layoutX="607.0" layoutY="750.0" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: #35abcc;" text="Enter" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Hyperlink fx:id="backlink" layoutX="725.0" layoutY="751.0" onAction="#goback" text="Back" textFill="#0d00fc" />
+   </children>
+</AnchorPane>

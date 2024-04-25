@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="856.0" prefWidth="1218.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.travelhistoryController">
+   <children>
+      <Label layoutX="409.0" layoutY="60.0" text="Travel History Records" underline="true">
+         <font>
+            <Font name="Elephant" size="34.0" />
+         </font>
+      </Label>
+      <TableView fx:id="travelHistoryTable" editable="true" layoutX="240.0" layoutY="164.0" prefHeight="540.0" prefWidth="739.0">
+        <columns>
+          <TableColumn prefWidth="241.0" text="Date" />
+          <TableColumn prefWidth="256.0" text="Type" />
+          <TableColumn prefWidth="241.0" text="Location" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="dateField" layoutX="138.0" layoutY="739.0" prefHeight="31.0" prefWidth="187.0" promptText="Date" />
+      <TextField fx:id="typeField" layoutX="406.0" layoutY="739.0" promptText="Type" />
+      <TextField fx:id="locationField" layoutX="656.0" layoutY="739.0" promptText="Location" />
+      <Button fx:id="addRecord" layoutX="906.0" layoutY="739.0" mnemonicParsing="false" onAction="#onAddButtonClick" text="Add Record" />
+      <Hyperlink fx:id="backlink" layoutX="1050.0" layoutY="740.0" onAction="#goback" text="Back" textFill="#1a00ff" />
+   </children>
+</AnchorPane>
